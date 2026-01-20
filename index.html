@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พรรคนับหนึ่ง - เบอร์ 7 | Y.S. Student Council</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="ys-badge">ย.ส.</span> พรรคนับหนึ่ง <span class="number-badge">เบอร์ 7</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active" onclick="showPage('home')">หน้าหลัก</a></li>
+            <li><a href="#policies" onclick="showPage('policies')">นโยบาย</a></li>
+            <li><a href="#members" onclick="showPage('members')">สมาชิกพรรค</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="page-section active">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2 class="animate-fade-up">สภานักเรียนโรงเรียนยโสธรพิทยาคม</h2>
+                <h1 class="party-name animate-fade-up delay-1">พรรค "นับหนึ่ง"</h1>
+                <div class="vote-number animate-zoom delay-2">เบอร์ 7</div>
+                <p class="slogan animate-fade-up delay-3">
+                    <i class="fas fa-quote-left"></i> 
+                    สายงานต่อ ก่องานใหม่ ใส่ใจปัญหาเล็กๆ 
+                    <i class="fas fa-quote-right"></i>
+                </p>
+                <button class="cta-btn animate-fade-up delay-4" onclick="showPage('policies')">ดูนโยบายของเรา</button>
+            </div>
+            <div class="hero-shape"></div>
+        </div>
+    </section>
+
+    <section id="policies" class="page-section">
+        <div class="container">
+            <h2 class="section-title">10 นโยบายขับเคลื่อน ย.ส.</h2>
+            <div class="policy-scroller">
+                
+                <div class="policy-card">
+                    <div class="icon-box"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>1. YSP พี่มีพอร์ต น้องมีที่เรียน</h3>
+                    <p>โครงการพี่สอนน้องทำพอร์ตโฟลิโอ แชร์เทคนิคการยื่นมหาลัย และคลังตัวอย่างพอร์ตจากรุ่นพี่ที่สอบติด</p>
+                </div>
+
+                <div class="policy-card">
+                    <div class="icon-box"><i class="fas fa-id-card"></i></div>
+                    <h3>2. ปรับปรุงบัตรนักเรียน</h3>
+                    <p>ผลักดันให้บัตรนักเรียนทันสมัยขึ้น ใช้งานได้จริงทั้งในและนอกโรงเรียน พร้อมดีไซน์ใหม่ที่น่าพกพา</p>
+                </div>
+
+                <div class="policy-card">
+                    <div class="icon-box"><i class="fab fa-line"></i></div>
+                    <h3>3. ปรับปรุง LINE Official</h3>
+                    <p>อัปเกรดระบบตอบกลับ แจ้งเตือนข่าวสารโรงเรียน ตารางเรียน และกิจกรรมได้รวดเร็วทันใจ</p>
+                </div>
+
+                <div class="policy-card">
+                    <div class="icon-box"><i class="fas fa-store"></i></div>
+                    <h3>4. YSP Market</h3>
+                    <p>พื้นที่ตลาดนัดออนไลน์และออฟไลน์ให้นักเรียนได้ลองขายของ สร้างรายได้ระหว่างเรียน</p>
+                </div>
+
+                <div class="policy-card">
+                    <div class="icon-box"><i class="fas fa-gamepad"></i></div>
+                    <h3>5. การแข่งขัน E-Sport</h3>
+                    <p>จัดทัวร์นาเมนต์ RoV, Free Fire และ eFootball อย่างเป็นทางการ เพื่อสนับสนุนศักยภาพเกมเมอร์</p>
+                </div>
+
+                <div class="policy-card">
+                    <div class="icon-box"><i class="fas fa-hands-helping"></i></div>
+                    <h3>6. ค่ายจิตอาสา</h3>
+                    <p>กิจกรรมออกค่ายพัฒนาชุมชน ปลูกฝังจิตสาธารณะ และสร้างความสามัคคีในหมู่คณะ</p>
+                </div>
+
+                <div class="policy-card">
+                    <div class="icon-box"><i class="fas fa-film"></i></div>
+                    <h3>7. ประกวดหนังสั้น</h3>
+                    <p>เปิดพื้นที่แสดงออกทางความคิดสร้างสรรค์ ผ่านการประกวดหนังสั้นในหัวข้อที่น่าสนใจ</p>
+                </div>
+
+                <div class="policy-card">
+                    <div class="icon-box"><i class="fas fa-medkit"></i></div>
+                    <h3>8. กล่องยาสามัญ</h3>
+                    <p>เพิ่มจุดให้บริการกล่องยาสามัญประจำบ้านตามจุดต่างๆ ในโรงเรียน เพื่อความปลอดภัยเบื้องต้น</p>
+                </div>
+
+                <div class="policy-card">
+                    <div class="icon-box"><i class="fas fa-rainbow"></i></div>
+                    <h3>9. Pride Month</h3>
+                    <p>จัดกิจกรรมเฉลิมฉลองเดือนแห่งความภาคภูมิใจ สนับสนุนความเท่าเทียมและความหลากหลายทางเพศ</p>
+                </div>
+
+                <div class="policy-card">
+                    <div class="icon-box"><i class="fas fa-book-open"></i></div>
+                    <h3>10. หนังสือรุ่น</h3>
+                    <p>จัดทำหนังสือรุ่นรูปแบบใหม่ (Digital & Physical) เพื่อเก็บความทรงจำที่สวยงามของทุกคน</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="members" class="page-section">
+        <div class="container">
+            <h2 class="section-title">ทีมงานพรรคนับหนึ่ง</h2>
+            <div class="members-grid" id="membersGrid">
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 พรรคนับหนึ่ง เบอร์ 7 | โรงเรียนยโสธรพิทยาคม</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
